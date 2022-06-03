@@ -39,6 +39,8 @@ public class Contact extends HttpServlet {
 		b.setRadio(radio);
 		b.setCompany(company);
 
+		request.setAttribute("bean", b);
+
 		if (radio.equals("yes")) {
 			request.getRequestDispatcher("/jsp/result.jsp").forward(request, response);
 		}else {

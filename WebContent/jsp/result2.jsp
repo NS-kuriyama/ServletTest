@@ -3,14 +3,13 @@
     <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
             <%@include file="../header.html" %>
   <p>氏名:${bean.name}</p>
-  <p>会社:${b.company}</p>
-  <p>メールアドレス:${b.address}</p>
-  <p>お問い合わせ内容:${b.area}</p>
-  <p>メルマガ種類:${b.news}</p>
-   <c:forEach var="p" items="${b.news }">
-   ${p}
+  <p>会社:${bean.company}</p>
+  <p>メールアドレス:${bean.address}</p>
+  <p>お問い合わせ内容:${bean.area}</p>
+   <c:forEach var="p" items="${bean.news }">
+    <p>メルマガ種類:${p}</p>
    </c:forEach>
-  <p>資料請求:${b.radio}</p>
+  <p>資料請求:${bean.radio}</p>
               <%@include file="../footer.html" %>
 
 

@@ -19,7 +19,7 @@ public class Bean implements java.io.Serializable{
 		return this.address;
 	}
 	public void setAddress(String address) {
-		this.name = address;
+		this.address = address;
 	}
 	public String getCompany() {
 		return this.company;
